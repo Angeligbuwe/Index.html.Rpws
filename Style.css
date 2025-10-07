@@ -1,0 +1,303 @@
+ @import url('http://fonts.googleapis.com/css2'); 
+  
+  
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+
+}
+
+/* .active {
+    text-decoration: underline;
+    font-weight: bold;
+} */
+body, html {
+    overflow-x: hidden;
+}
+
+.navbar {
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+}
+
+.Famous {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 30px;
+    color: rgb(20, 74, 36);
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+} 
+.Famous span {
+    color: rgb(170, 170, 28);
+    font-size: 35px;
+    
+} 
+
+.nav-links {
+    display: flex;
+    align-items: center;
+   
+     
+}
+
+.nav-links li{
+    margin: 30px; 
+    background-color:rgb(227, 202, 218)
+}
+
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image:url(images.jpg); 
+    background-position: bottom;
+    background-size: cover;
+    align-items:flex-end;
+ } 
+
+.header-content{
+    margin-top: 150px;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 50px;
+
+ }
+
+.header-content h2{
+    font-size: 4vmin;
+    
+ }
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: rgb(255, 0, 0);
+    margin: 10px auto;
+    border-radius: 5px;
+    
+ }
+
+.header-content h1{
+    margin-top: 50px;
+    font-size: 7vmin;
+    margin-bottom: 100px;
+    color: rgb(196, 225, 225);
+    
+ }
+
+.ctn{
+    padding: 8px 15px;
+    background: red;
+    border-radius: 30px;
+    color: seashell;
+ }
+
+.flag {
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 2px 2px 4px rgb(171, 64, 64);
+}
+
+section{
+    width: 80%;
+    margin: 10% auto;
+}
+.title{
+    text-align: center;
+    font-size: 5vmin;
+    color: rgb(5, 70, 70);
+}
+.row{
+    display: flex;
+    align-items:center;
+    width: 100%;
+    justify-content:space-between ;
+    background: rgb(195, 239, 239);
+      
+} 
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.jollof .row{
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.row{
+    flex-direction: flex;
+}
+
+.row .col{
+    margin: 20px auto;
+}
+
+
+h4{
+    font-size: 3vmin;
+    color: rgb(5, 70, 70);
+    margin: 20px auto;
+}
+
+.jollof .ctn{
+    margin-top: 30px;
+}
+
+.jollof p{
+    color: rgb(44, 8, 8);
+    padding: 0px 40px;
+
+}
+
+.content-col{
+    width: 40%;
+}
+
+.image-col{
+    width: 60%;
+}
+
+.instructions .row .col{
+    background:fixed;
+    width: 50%;
+} 
+
+.instructions .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.image-gallery img{
+    max-width: 300px;
+    margin: 10px;
+
+}
+.content-col h1{
+    font-size: 7vmin;
+    color: rgb(2, 32, 32);
+}
+.content-col .line{
+    margin-left: -1px;
+}
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+} 
+
+
+.footer{ 
+    width: 100%;
+    height: 150px;
+    padding: 20px 80px;
+    margin: 0;
+    background: rgb(45, 175, 175);
+    text-align: center;
+}
+.footer p{
+    color: rgb(26, 26, 25);
+    margin: 20px auto;
+    padding: 20px auto;
+    
+}
+
+form{
+    width: 80%;
+    height: 150px;
+    padding: 20px auto;
+    margin: 20px auto;
+    flex-direction: column;
+    text-align: center;
+    background-image:url(Img8.jpg) ;
+    justify-content: center;
+
+}
+
+@media only screen and (max-width: 850px){
+    .navbar{
+        padding: 0;
+    }
+    .Famous {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 80px;
+        height: 92vh;
+        justify-content: center;
+        background: rgb(250, 241, 147);
+    }  
+    .nav-links li{
+        margin: 30px auto;
+        display: inline;
+
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 90%;
+    }
+    .instructions .col{
+        width: 100px;
+    }
+    .image-gallery{
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img{
+        width: 90%;
+    }
+
+    .form{
+        padding: 10px;
+    }
+    .footer{
+        padding: 10px;
+    }
+}
+
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.ctn:hover{
+    background: #91c55a;
+    color: rgb(55, 10, 10);
+    box-shadow: 2px 2px 5px rgb(16, 0, 0);
+}
+li:hover{
+    color: rgb(224, 31, 34);
+    cursor: zoom-out;
+}
+
+
+    
+    
+
+
+
